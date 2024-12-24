@@ -12,7 +12,7 @@ function ContentHeading({
 }) {
   const navigate = useNavigate();
   return (
-    <section className="bg-[#E4E4E780] pb-2">
+    <section className="bg-[#E4E4E780] py-2">
       <div className="container flex justify-between">
         <div>
           <small className="text-xs text-secondaryColor">Welcome back</small>
