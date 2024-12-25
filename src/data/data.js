@@ -7,8 +7,12 @@ import image6 from "../assets/images/image6.svg";
 import typeIcon from "../assets/images/icons/type.svg";
 import aboutIcon from "../assets/images/icons/about.svg";
 import locationIcon from "../assets/images/icons/location.svg";
+import l1 from "../assets/images/location/l1.svg";
+import l2 from "../assets/images/location/l2.svg";
+import l3 from "../assets/images/location/l3.svg";
 
 const incidentIcon = [typeIcon, aboutIcon, locationIcon];
+const locationDataImage = [l1, l2, l3];
 
 const blogData = [
   {
@@ -54,6 +58,36 @@ const blogData = [
     price: "$1,456,654.00",
   },
 ];
+const locationData = [
+  {
+    id: 1,
+    image: locationDataImage[0],
+    title: "Whitechapel Rd.",
+    description: "Tulare County,  Los Angles, CA 23415",
+    price: "$1,456,654.00",
+  },
+  {
+    id: 2,
+    image: locationDataImage[1],
+    title: "Whitechapel Rd.",
+    description: "Tulare County,  Los Angles, CA 23415",
+    price: "$1,456,654.00",
+  },
+  {
+    id: 3,
+    image: locationDataImage[2],
+    title: "Whitechapel Rd.",
+    description: "Tulare County,  Los Angles, CA 23415",
+    price: "$1,456,654.00",
+  },
+  {
+    id: 4,
+    image: locationDataImage[0],
+    title: "Whitechapel Rd.",
+    description: "Tulare County,  Los Angles, CA 23415",
+    price: "$1,456,654.00",
+  },
+];
 const incidentData = [
   {
     id: 1,
@@ -75,5 +109,4 @@ const incidentData = [
   },
 ];
 
-
-export { blogData, incidentData};
+export { blogData, incidentData, locationData };

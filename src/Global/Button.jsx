@@ -1,6 +1,6 @@
 function Button({ classNm, children, handleClick }) {
   return (
-    <button className={`${classNm} px-6 py-2 rounded-md`} onClick={handleClick}>
+    <button className={`${classNm} px-6 py-2 rounded-md text-nowrap`} onClick={handleClick}>
       {children}
     </button>
   );

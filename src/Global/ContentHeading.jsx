@@ -19,9 +19,11 @@ function ContentHeading({
           <small className="text-xs font-oneast text-secondaryColor">
             Welcome back
           </small>
-          <h3 className="text-[18px] md:text-[20px] lg:text-[26px] font-bold">
-            {headingTitle}
-          </h3>
+          <div>
+            <h3 className="text-[18px] md:text-[20px] lg:text-[26px] font-bold">
+              {headingTitle}
+            </h3>
+          </div>
         </div>
         {progress && (
           <div className="rounded-full overflow-hidden hidden md:flex">
@@ -43,7 +45,7 @@ function ContentHeading({
           )}
           {isSort && (
             <div className="text-secondaryColor bg-white px-2 py-2 rounded-lg">
-              <span>Sort By: Date modified</span>
+              <spa className="text-nowrap">Sort By: Date modified</spa>
             </div>
           )}
           {backButton?.state && (
