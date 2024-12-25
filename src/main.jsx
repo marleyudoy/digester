@@ -12,6 +12,8 @@ import CypherAi from "./pages/CypherAi.jsx";
 import Started from "./components/incidens/Started.jsx";
 import IncidentHome from "./components/incidens/IncidentHome.jsx";
 import DescribeIncident from "./components/incidens/DescribeIncident.jsx";
+import TitleIncident from "./components/incidens/TitleIncident.jsx";
+import FinishIncident from "./components/incidens/FinishIncident.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,17 +32,25 @@ const router = createBrowserRouter([
         element: <Incidents />,
         children: [
           {
-            index:true,
-            element: <IncidentHome />
+            index: true,
+            element: <IncidentHome />,
           },
           {
-            path: '/incident/started',
-            element: <Started/>
+            path: "/incident/started",
+            element: <Started />,
           },
           {
-            path: '/incident/describe',
-            element: <DescribeIncident/>
-          }
+            path: "/incident/describe",
+            element: <DescribeIncident />,
+          },
+          {
+            path: "/incident/title",
+            element: <TitleIncident />,
+          },
+          {
+            path: "/incident/finish",
+            element: <FinishIncident />,
+          },
         ],
       },
       {
