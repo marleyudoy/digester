@@ -75,4 +75,5 @@ const incidentData = [
   },
 ];
 
-export { blogData, incidentData };
+
+export { blogData, incidentData};

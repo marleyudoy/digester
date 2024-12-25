@@ -11,6 +11,7 @@ import Documents from "./pages/Documents.jsx";
 import CypherAi from "./pages/CypherAi.jsx";
 import Started from "./components/incidens/Started.jsx";
 import IncidentHome from "./components/incidens/IncidentHome.jsx";
+import DescribeIncident from "./components/incidens/DescribeIncident.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
           {
             path: '/incident/started',
             element: <Started/>
+          },
+          {
+            path: '/incident/describe',
+            element: <DescribeIncident/>
           }
         ],
       },
