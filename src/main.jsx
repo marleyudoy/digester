@@ -9,6 +9,8 @@ import Locations from "./pages/Locations.jsx";
 import Activities from "./pages/Activities.jsx";
 import Documents from "./pages/Documents.jsx";
 import CypherAi from "./pages/CypherAi.jsx";
+import Started from "./components/incidens/Started.jsx";
+import IncidentHome from "./components/incidens/IncidentHome.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -19,12 +21,22 @@ const router = createBrowserRouter([
         element: <Dashboard />,
       },
       {
-        path: '/dashboard',
-        element: <Dashboard/>
+        path: "/dashboard",
+        element: <Dashboard />,
       },
       {
         path: "/incident",
         element: <Incidents />,
+        children: [
+          {
+            index:true,
+            element: <IncidentHome />
+          },
+          {
+            path: '/incident/started',
+            element: <Started/>
+          }
+        ],
       },
       {
         path: "/location",

@@ -15,7 +15,7 @@ function ContentHeading({
     <section className="bg-[#E4E4E780] py-2">
       <div className="container flex justify-between">
         <div>
-          <small className="text-xs text-secondaryColor">Welcome back</small>
+          <small className="text-xs font-oneast text-secondaryColor">Welcome back</small>
           <h3 className="text-[20px] md:text-[26px] font-bold">
             {headingTitle}
           </h3>

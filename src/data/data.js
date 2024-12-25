@@ -4,6 +4,11 @@ import image3 from "../assets/images/image3.svg";
 import image4 from "../assets/images/image4.svg";
 import image5 from "../assets/images/image5.svg";
 import image6 from "../assets/images/image6.svg";
+import typeIcon from "../assets/images/icons/type.svg";
+import aboutIcon from "../assets/images/icons/about.svg";
+import locationIcon from "../assets/images/icons/location.svg";
+
+const incidentIcon = [typeIcon, aboutIcon, locationIcon];
 
 const blogData = [
   {
@@ -49,5 +54,25 @@ const blogData = [
     price: "$1,456,654.00",
   },
 ];
+const incidentData = [
+  {
+    id: 1,
+    icon: incidentIcon[0],
+    title: "What type of incident?",
+    description: "Choose the category that best describes the incident.",
+  },
+  {
+    id: 2,
+    icon: incidentIcon[1],
+    title: "What type of incident?",
+    description: "Choose the category that best describes the incident.",
+  },
+  {
+    id: 3,
+    icon: incidentIcon[2],
+    title: "What type of incident?",
+    description: "Choose the category that best describes the incident.",
+  },
+];
 
-export { blogData };
+export { blogData, incidentData };

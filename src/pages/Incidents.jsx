@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { Outlet } from "react-router-dom";
+
 
 function Incidents() {
+
   return (
-    <div>Incidents</div>
-  )
+      <Outlet/>
+  );
 }
 
-export default Incidents
+export default Incidents;

@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import ContentHeading from "../Global/ContentHeading";
 import Button from "../Global/Button";
 import { blogData } from "../data/data";
 import BlogCard from "../Global/BlogCard";
 function Dashboard() {
+  const [isChat, setIsChat] = useState(false);
   return (
-    <div className="relative">
+    <div className="">
       <ContentHeading
         headingTitle="Dashboard"
         isSearch={true}
@@ -20,6 +21,11 @@ function Dashboard() {
         {blogData.map((data) => (
           <BlogCard key={data.id} data={data} />
         ))}
+      </div>
+      <div className="container">
+        <button className="w-[50px] h-[50px] bg-primaryColor fixed bottom-[3rem] text-white text-xl rounded-full right-[5rem]">
+          C
+        </button>
       </div>
     </div>
   );
