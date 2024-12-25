@@ -19,7 +19,7 @@ function ContentHeading({
           <small className="text-xs font-oneast text-secondaryColor">
             Welcome back
           </small>
-          <h3 className="text-[20px] md:text-[26px] font-bold">
+          <h3 className="text-[18px] md:text-[20px] lg:text-[26px] font-bold">
             {headingTitle}
           </h3>
         </div>

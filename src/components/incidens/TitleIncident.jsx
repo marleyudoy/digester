@@ -46,7 +46,7 @@ function TitleIncident() {
             </h3>
             <textarea
             placeholder="Type here"
-              className="w-[90%] md:w-[70%] bg-[#F4F4F5] px-2 py-3 border border-secondaryColor/20 rounded-md outline-none"
+              className="w-[90%] resize-none md:w-[70%] bg-[#F4F4F5] px-2 py-3 border border-secondaryColor/20 rounded-md outline-none"
               name=""
               id=""
             ></textarea>
