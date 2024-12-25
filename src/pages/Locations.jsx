@@ -6,7 +6,8 @@ import { locationData } from "../data/data";
 import locationimage from "../assets/images/icons/location.svg";
 import cost from "../assets/images/location/cost.svg";
 import BlogCard from "../Global/BlogCard";
-import map from "../assets/images/location/map.svg"
+import map from "../assets/images/location/map.svg";
+import d3 from "../assets/images/location/l3.svg";
 
 function LoactionCard({ subTitle, image, title }) {
   return (
@@ -29,6 +30,34 @@ function LoactionCard({ subTitle, image, title }) {
 }
 
 function Locations() {
+  const blogData = [
+    {
+      image: d3,
+      title: "Activity name",
+      description: "Location name 16.12212, -122.1424",
+      price: "$1,456,654.00",
+    },
+    {
+      image: d3,
+      title: "Activity name",
+      description: "Location name 16.12212, -122.1424",
+      price: "$1,456,654.00",
+    },
+  ];
+  const documentData = [
+    {
+      image: d3,
+      title: "Doucment name",
+      description: "Location name 16.12212, -122.1424",
+      price: "$1,456,654.00",
+    },
+    {
+      image: d3,
+      title: "Document name",
+      description: "Location name 16.12212, -122.1424",
+      price: "$1,456,654.00",
+    },
+  ];
   return (
     <section>
       <ContentHeading
@@ -71,10 +100,27 @@ function Locations() {
             ))}
           </div>
           <hr />
-          <div className="mt-3">
+          <div className="mt-3 md:mt-5 lg:mt-10">
             <div className="flex justify-between items-center">
               <h4 className="font-bold">Activities</h4>
               <button className="underline">See all</button>
+            </div>
+            <div className="mt-5">
+              {blogData.map((data,index) => (
+                <BlogCard key={index} data={data} flexRow={true} />
+              ))}
+            </div>
+          </div>
+          <hr />
+          <div className="mt-3 md:mt-5 lg:mt-10">
+            <div className="flex justify-between items-center">
+              <h4 className="font-bold">Documents</h4>
+              <button className="underline">See all</button>
+            </div>
+            <div className="mt-5">
+              {documentData.map((data,index) => (
+                <BlogCard key={index} data={data} flexRow={true} />
+              ))}
             </div>
           </div>
         </div>
@@ -83,7 +129,9 @@ function Locations() {
           <div className="">
             <img src={map} alt="" />
           </div>
-          <h2 className="text-secondaryColor mt-2">Start 19.1232, -118.233     End 19.3245, -119.2323</h2>
+          <h2 className="text-secondaryColor mt-2">
+            Start 19.1232, -118.233 End 19.3245, -119.2323
+          </h2>
         </div>
       </div>
     </section>
