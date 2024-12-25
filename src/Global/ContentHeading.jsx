@@ -45,7 +45,7 @@ function ContentHeading({
           )}
           {isSort && (
             <div className="text-secondaryColor hidden md:block bg-white px-2 py-2 rounded-lg">
-              <spa className="text-nowrap">Sort By: Date modified</spa>
+              <span className="text-nowrap">Sort By: Date modified</span>
             </div>
           )}
           {backButton?.state && (

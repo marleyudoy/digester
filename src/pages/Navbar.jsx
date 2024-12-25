@@ -42,7 +42,7 @@ function Navbar() {
           {navItem.map((it) => (
             <li
               key={it.item}
-              className="font-[14px] text-secondaryColor hover:text-black transition duration-300"
+              className="font-[14px] text-secondaryColor relative hover:text-black transition duration-300"
             >
               <Link to={it.path}>
                 {it.item}

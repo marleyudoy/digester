@@ -2,7 +2,9 @@ import React from 'react'
 
 function Documents() {
   return (
-    <div>Documents hello udoy</div>
+    <section className='h-screen flex items-center justify-center'>
+    <h1 className='text-5xl font-bold font-oneast'>Documents</h1>
+  </section>
   )
 }
 
