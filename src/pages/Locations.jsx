@@ -100,12 +100,12 @@ function Locations() {
             ))}
           </div>
           <hr />
-          <div className="mt-3 md:mt-5 lg:mt-10">
+          <div className="mt-3 md:mt-5 lg:mt-10 ">
             <div className="flex justify-between items-center">
               <h4 className="font-bold">Activities</h4>
               <button className="underline">See all</button>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 space-y-3">
               {blogData.map((data,index) => (
                 <BlogCard key={index} data={data} flexRow={true} />
               ))}
@@ -117,7 +117,7 @@ function Locations() {
               <h4 className="font-bold">Documents</h4>
               <button className="underline">See all</button>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 space-y-3">
               {documentData.map((data,index) => (
                 <BlogCard key={index} data={data} flexRow={true} />
               ))}

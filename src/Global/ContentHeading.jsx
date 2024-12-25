@@ -20,7 +20,7 @@ function ContentHeading({
             Welcome back
           </small>
           <div>
-            <h3 className="text-[18px] md:text-[20px] lg:text-[26px] font-bold">
+            <h3 className="text-[16px] md:text-[20px] lg:text-[26px] font-bold">
               {headingTitle}
             </h3>
           </div>
@@ -34,7 +34,7 @@ function ContentHeading({
         )}
         <div className="flex items-center gap-3">
           {isSearch && (
-            <div className="flex items-center gap-3 bg-white px-2 py-2 rounded-lg justify-center">
+            <div className="hidden md:flex items-center gap-3 bg-white px-2 py-2 rounded-lg justify-center">
               <img src={SearchICon} alt="" />
               <input
                 className="bg-transparent border-none outline-none"
@@ -44,7 +44,7 @@ function ContentHeading({
             </div>
           )}
           {isSort && (
-            <div className="text-secondaryColor bg-white px-2 py-2 rounded-lg">
+            <div className="text-secondaryColor hidden md:block bg-white px-2 py-2 rounded-lg">
               <spa className="text-nowrap">Sort By: Date modified</spa>
             </div>
           )}

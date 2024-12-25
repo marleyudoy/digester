@@ -37,7 +37,7 @@ function TitleIncident() {
               placeholder="Add here title"
             />
           </div>
-          <div className="w-full">
+          <div className="w-full mt-5">
             <h1 className="text-[24px] font-oneast font-bold">
               Let’s give the incident a title?
             </h1>
